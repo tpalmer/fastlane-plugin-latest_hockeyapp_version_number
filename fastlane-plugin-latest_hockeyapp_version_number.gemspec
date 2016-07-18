@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
   spec.email         = %q{palmer.travis@gmail.com}
 
   spec.summary       = %q{Easily fetch the most recent HockeyApp version number for your app}
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-latest_hockeyapp_version_number"
+  spec.homepage      = "https://github.com/tpalmer/fastlane-plugin-latest_hockeyapp_version_number"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  # spec.add_dependency 'your-dependency', '~> 1.0.0'
+  spec.add_dependency 'hockeyapp'
 
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'bundler'
@@ -25,4 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'fastlane', '>= 1.97.2'
+  spec.add_development_dependency 'webmock'
 end
