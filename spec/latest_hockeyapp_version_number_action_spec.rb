@@ -31,7 +31,7 @@ describe Fastlane::Actions::LatestHockeyappVersionNumberAction do
             api_token: 'xxx'
           })
         end").runner.execute(:test)
-      end.to raise_error("No App Name for LatestHockeyappVersionNumberAction given, pass using `app_name: 'token'`")
+      end.to raise_error("No App Name for LatestHockeyappVersionNumberAction given, pass using `app_name: 'name'`")
     end
 
     it "returns the latest version" do
