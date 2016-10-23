@@ -13,9 +13,11 @@ module Fastlane
         apps = client.get_apps
         app = apps.find { |a| a.title == params[:app_name] && a.platform == params[:platform] && a.release_type == params[:release_type].to_i }
         version = app.versions.first.version.to_i
+        shortversion = app.versions.first.shortversion
         UI.message "Found version #{version}"
+        UI.message "Found shortversion #{shortversion}"
 
-        version
+        version, shortversion
       end
 
       def self.description
