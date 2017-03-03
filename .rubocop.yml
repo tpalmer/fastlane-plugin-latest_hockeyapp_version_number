@@ -72,6 +72,9 @@ Style/AndOr:
   Enabled: false
 
 # Configuration parameters: CountComments.
+Metrics/BlockLength:
+  Max: 45
+
 Metrics/ClassLength:
   Max: 320
 
